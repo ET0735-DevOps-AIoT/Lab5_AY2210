@@ -7,6 +7,9 @@ from hal import hal_led as led
 from hal import hal_lcd as LCD
 from hal import hal_keypad as keypad
 
+import led_control as led_ctrl
+
+
 
 def main():
     #Initiallize LED driver
@@ -29,7 +32,11 @@ def main():
     lcd.lcd_display_string("DevOps for AIoT", 1)  # write on line 1
     lcd.lcd_display_string("Lab 5", 2)  # write on line 2
 
+    led_ctrl.init()
+    led_ctrl.check_keypad(lcd)
+
 
 # Main entry point
 if __name__ == "__main__":
     main()
+
