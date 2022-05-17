@@ -39,10 +39,11 @@ def check_keypad(lcd):
         if key == 1:
             delay = 1
             lcd.lcd_clear()
-            lcd.lcd_display_string("Blink LED",1)
+            lcd.lcd_display_string("LED Control", 1)  # write on line 1
+            lcd.lcd_display_string("Blink LED",2)
 
         elif key == 0:
             delay = 0
             lcd.lcd_clear()
-            lcd.lcd_display_string("OFF LED",1)
-            #led.set_output(10, 0);
+            lcd.lcd_display_string("LED Control", 1)  # write on line 1
+            lcd.lcd_display_string("OFF LED",2)

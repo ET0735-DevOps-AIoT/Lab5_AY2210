@@ -29,8 +29,8 @@ def main():
 
     #Clear LCD and display message
     lcd.lcd_clear()
-    lcd.lcd_display_string("DevOps for AIoT", 1)  # write on line 1
-    lcd.lcd_display_string("Lab 5", 2)  # write on line 2
+    lcd.lcd_display_string("LED Blinker", 1)  # write on line 1
+    lcd.lcd_display_string("0:Off 1:Blink", 2)  # write on line 2
 
     led_ctrl.init()
     led_ctrl.check_keypad(lcd)
